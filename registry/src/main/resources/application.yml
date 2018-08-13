@@ -1,10 +1,6 @@
 spring:
   application:
     name: registry
-  security:
-    user:
-      name: xkcoding
-      password: 123456
 server:
   port: 8761
 eureka:
@@ -14,7 +10,7 @@ eureka:
   client:
     # 配置注册中心地址
     service-url:
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:${server.port}/eureka/
+      defaultZone: http://localhost:${server.port}/eureka/
     # 设置不自我注册
     register-with-eureka: false
     # 设置不查找注册中心
