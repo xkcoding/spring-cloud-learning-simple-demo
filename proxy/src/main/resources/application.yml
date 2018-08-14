@@ -20,8 +20,8 @@ zuul:
     connect-timeout-millis: 60000
     socket-timeout-millis: 60000
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  ReadTimeout: 15000
+  ConnectTimeout: 15000
 hystrix:
   command:
     default:
