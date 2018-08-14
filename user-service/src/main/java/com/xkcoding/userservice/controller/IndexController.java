@@ -23,8 +23,11 @@ public class IndexController {
 	@Value("${spring.application.name}")
 	private String applicationName;
 
+	@Value("${server.port}")
+	private String port;
+
 	@GetMapping("/index")
 	public String index() {
-		return "欢迎来到：" + applicationName;
+		return "欢迎来到：" + applicationName + " 当前端口号为：" + port;
 	}
 }
