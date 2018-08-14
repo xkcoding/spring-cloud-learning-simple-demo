@@ -1,8 +1,8 @@
 server:
-  port: 9000
+  port: 9100
 spring:
   application:
-    name: config-server
+    name: config-client
   rabbitmq:
     host: localhost
     port: 5672
@@ -12,12 +12,6 @@ spring:
     bus:
       trace:
         enabled: true
-    # 配置中心配置
-    config:
-      server:
-        git:
-          uri: https://github.com/xkcoding/spring-cloud-learning-simple-demo-config
-          default-label: master
 eureka:
   client:
     # 配置注册中心地址
