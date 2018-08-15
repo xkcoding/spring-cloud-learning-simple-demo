@@ -21,7 +21,7 @@
 ## 启动顺序
 
 1. 启动注册中心服务
-2. 启动配置中心服务端
+2. 启动配置中心服务端（配置仓库地址：https://github.com/xkcoding/spring-cloud-learning-simple-demo-config ）
 3. 启动用户服务、订单服务、配置中心客户端
 4. 启动zuul网关
 5. enjoy ~
